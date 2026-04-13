@@ -21,6 +21,7 @@ import repair from '../assets/repaire/repaire (13).jpg'
 import repai from '../assets/repaire/repaire (12).jpg'
 import repa from '../assets/repaire/repaire (8).jpg'
 import rep from '../assets/repaire/repaire (6).jpg'
+import { FaArrowAltCircleRight, FaArrowCircleRight } from 'react-icons/fa'
 // end image repair
 
 
@@ -32,7 +33,7 @@ const Home = () => {
       initial={{opacity:0 , y:-100}}
       animate={{opacity:1, y:0}}
       transition={{duration:0.8}}
-      className='text-center pt-20'>
+      className='text-center pt-25 max-w-6xl mx-auto'>
         <h1 className='text-4xl'>Welcome To Our Customers</h1>
         <h2 className='text-3xl'>Everything you need are here</h2>
         <h3 className='text-2xl text-gray-500 animate-bounce duration-100 linear pt-5'><span className='text-blue-600'>Silas</span> Tech</h3>
@@ -40,28 +41,50 @@ const Home = () => {
       {/* start category home */}
       <motion.div 
       >
-      <motion.div 
+      <motion.div className='mt-20 mx-10'>
+        <motion.h1 
       initial={{opacity:0, y:80}}
       whileInView={{opacity:1, y:0}}
       transition={{duration:0.8}}
       viewport={{once:true}}
-      className='mt-20 mx-10'>
-        <h1 className='text-3xl text-center pb-8 font-bold text-blue-600'>Categories</h1>
+        className='text-3xl text-center pb-8 font-bold text-blue-600 max-w-6xl mx-auto '>Categories</motion.h1>
         <motion.section
-        className='flex flex-row justify-evenly items-center'>
-          <div className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
+        className='flex flex-col md:flex-row lg:flex-row justify-evenly items-center max-w-6xl mx-auto gap-5'>
+          <motion.div 
+      initial={{opacity:0, y:80}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.8}}
+      viewport={{once:true}}
+          className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
         <Link to='/phone'><img src={phone} alt="" className='w-50 h-50 rounded-full cursor-pointer hover:opacity-60 bg-linear-30 duration-100'/></Link>
         <p className='text-center text-xl'>Phones</p>
-        </div>
-        <div className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
+        </motion.div>
+        <motion.div 
+      initial={{opacity:0, y:80}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.8}}
+      viewport={{once:true}}
+        className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
        <Link to='/watch'><img src={watch} alt="" className='w-50 h-50 rounded-full cursor-pointer hover:opacity-60 bg-linear-30 duration-100' /></Link>
         <p className='text-center text-xl'>Watches</p>
-        </div>
-        <div className='shadow-lg p-7 rounded-3xl shadow-blue-600 '>
+        </motion.div>
+        <motion.div 
+      initial={{opacity:0, y:80}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.8}}
+      viewport={{once:true}}
+        className='shadow-lg p-7 rounded-3xl shadow-blue-600 '>
         <Link to='/headphone'><img src={haedphone} alt="" className='w-50 h-50 rounded-full cursor-pointer hover:opacity-60 bg-linear-30 duration-100'/></Link>
         <p className='text-center text-xl'>HeadPhones</p>
-                     </div>
-          <Link to='category' className='hover:text-blue-600 hover:underline duration-100'>View all</Link>
+                     </motion.div>
+          <motion.div
+      initial={{opacity:0, y:80}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.8}}
+      viewport={{once:true}}
+          >
+          <Link to='category' className='text-blue-600 hover:underline duration-100 flex items-center gap-2'>View all <FaArrowAltCircleRight /></Link>
+        </motion.div>
         </motion.section>
       </motion.div>
       {/* end category home */}
@@ -69,58 +92,88 @@ const Home = () => {
       {/* start product home */}
 
       <motion.div 
+      className='mt-20'>
+          <motion.h1 
       initial={{opacity:0, y:80}}
       whileInView={{opacity:1, y:0}}
       transition={{duration:0.8}}
       viewport={{once:true}}
-      className='mt-20'>
-          <h1 className='text-3xl text-center pt-5 font-bold text-blue-600'>Products</h1>
+          className='text-3xl text-center pt-5 font-bold text-blue-600'>Products</motion.h1>
 
         <section >
           <motion.div 
-
-          className='flex flex-row justify-evenly items-center pt-10 '>
-            <div>
+          className='grid grid-cols-2 sm:grid-cols-3  justify-between items-center pt-10 max-w-5xl mx-auto pl-5'>
+            <motion.div 
+        initial={{opacity:0, y:80}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.8}}
+      viewport={{once:true}}
+            className='pt-8'>
           <img src={accessory} alt="" className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><motion.button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
           cursor-pointer rounded-xl  '>More Details</motion.button></Link>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+           initial={{opacity:0, y:80}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.8}}
+      viewport={{once:true}} 
+          className='pt-8'>
           <img src={watc} alt="" className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
           cursor-pointer rounded-xl  '>More Details</button></Link>
 
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+           initial={{opacity:0, y:80}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.8}}
+      viewport={{once:true}} 
+          className='pt-8'>
           <img src={phon} alt=""  className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
           cursor-pointer rounded-xl  '>More Details</button></Link>
-          </div>
           </motion.div>
-          <motion.div 
-          initial={{opacity:0, y:80}}
-          whileInView={{opacity:1, y:0}}
-          transition={{duration:0.8}}
-          viewport={{once:true}}
-
-          className='flex flex-row justify-evenly items-center mt-10'>
-            <div>
+              <motion.div
+               initial={{opacity:0, y:80}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.8}}
+      viewport={{once:true}} 
+              className='pt-8'>
           <img src={headphon} alt=""  className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
           cursor-pointer rounded-xl  '>More Details</button></Link>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+           initial={{opacity:0, y:80}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.8}}
+      viewport={{once:true}} 
+          className='pt-8'>
           <img src={smartwatch} alt=""  className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
           cursor-pointer rounded-xl  '>More Details</button></Link>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+           initial={{opacity:0, y:80}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.8}}
+      viewport={{once:true}} 
+          className='pt-8'>
           <img src={speaker} alt=""  className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
           cursor-pointer rounded-xl  '>More Details</button></Link>
-          </div>
           </motion.div>
-          <Link to='/produt' className='mx-110 hover:text-blue-600 duration-100 hover:underline '>View All</Link>
+          <motion.div
+           initial={{opacity:0, y:80}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.8}}
+      viewport={{once:true}} 
+          className=' pt-7 mx-auto pl-20'>
+          <Link to='/produt' className=' text-blue-600 duration-100 hover:underline flex items-center gap-2'>View All <FaArrowCircleRight /></Link>
+          </motion.div>
+          </motion.div>
+          
         </section>
       </motion.div>
             {/* end product home */}
@@ -132,8 +185,7 @@ const Home = () => {
               whileInView={{opacity:1, y:0}}
               transition={{duration:0.8}}
               viewport={{once:true}}
-              
-              
+            
               className='text-center mt-10'>
                 <h1 className='text-3xl'>Other Services We Make</h1>
                 <h2 className='text-2xl'>Repaire All Electronic</h2>
@@ -141,38 +193,48 @@ const Home = () => {
               </motion.div>
 
               <motion.div 
+              className='grid grid-cols-2 sm:grid-cols-4  justify-evenly items-center pt-20 max-w-6xl mx-auto pl-4'>
+                <motion.div
                   initial={{opacity:0, y:80}}
                   whileInView={{opacity:1, y:0}}
                   transition={{duration:0.8}}
                   viewport={{once:true}}
-            
-              className='flex flex-row justify-evenly items-center pt-20'>
-                <motion.div>
-
+                  >
                   <img src={repair} alt="" className='w-40 h-40 rounded-3xl shadow-md shadow-blue-600' />
-                  <p className='text-center text-xl pt-1'>Repaire Buttons</p>
+                  <p className='pl-4 text-xl pt-1'>Repaire Buttons</p>
                   <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
                       cursor-pointer rounded-xl  '>More Details</button></Link>
                 </motion.div>
-                <motion.div>
-
+                <motion.div
+                  initial={{opacity:0, y:80}}
+                  whileInView={{opacity:1, y:0}}
+                  transition={{duration:0.8}}
+                  viewport={{once:true}}
+                  >
                   <img src={repa} alt=""  className='w-40 h-40 rounded-3xl shadow-md shadow-blue-600'/>
-                  <p className='text-center text-xl pt-1'>Repaire Battery</p>
+                  <p className='pl-4 text-xl pt-1'>Repaire Battery</p>
                   <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
                       cursor-pointer rounded-xl  '>More Details</button></Link>
                 </motion.div>
-                <motion.div>
-                  
-
+                <motion.div
+                  initial={{opacity:0, y:80}}
+                  whileInView={{opacity:1, y:0}}
+                  transition={{duration:0.8}}
+                  viewport={{once:true}}
+                  >
                   <img src={repai} alt="" className='w-40 h-40 rounded-3xl pt-1 shadow-md shadow-blue-600' />
-                  <p className='text-center text-xl'>Repaire Camera</p>
+                  <p className='pl-4 text-xl'>Repaire Camera</p>
                   <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
                       cursor-pointer rounded-xl  '>More Details</button></Link>
                 </motion.div>
-                <motion.div>
-
+                <motion.div
+                  initial={{opacity:0, y:80}}
+                  whileInView={{opacity:1, y:0}}
+                  transition={{duration:0.8}}
+                  viewport={{once:true}}
+                  >
                   <img src={rep} alt=""  className='w-40 h-40 rounded-3xl pt-1 shadow-md shadow-blue-600 '/>
-                  <p className='text-center text-xl'>Repaire Screen</p>
+                  <p className='pl-4 text-xl'>Repaire Screen</p>
                   <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
                       cursor-pointer rounded-xl  '>More Details</button></Link>
                 </motion.div>

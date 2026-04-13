@@ -12,11 +12,11 @@ return(
 initial={{opacity:0 , scale:0.7}}
 animate={{opacity:1, scale:1}}
 transition={{duration:0.5}}
-className="px-10 mt-20"> 
-<h1 className="text-3xl pl-35 font-bold text-blue-600"> 
+className=" mt-20"> 
+<h1 className="text-3xl pl-20 font-bold text-blue-600"> 
 {name} 
 </h1> 
-<div className="grid md:grid-cols-3 gap-8 mt-8"> 
+<div className="grid grid-cols-2 max-w-6xl mx-auto sm:grid-cols-3   p-5"> 
 {filtered.map((product)=>( 
 <ProductCard key={product.id} product={product}/> 
 ))} 

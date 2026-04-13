@@ -17,43 +17,61 @@ const Categories = () => {
     className=''>
      {/* start category home */}
           <div className='mt-20 mx-10'>
-            <h1 className='text-3xl font-bold text-blue-600 text-center pb-8'>Categories</h1>
+            <h1 className='text-3xl font-bold text-blue-600 text-center pb-8 '>Categories</h1>
             <motion.section 
-             initial={{opacity:0 , y:50}}
+            className='flex flex-col md:flex-row lg:flex-row justify-evenly items-center gap-8'>
+              <motion.div 
+               initial={{opacity:0 , y:50}}
              animate={{opacity:1, y:0}}
              transition={{delay:0.3}}
-            className='flex flex-row justify-evenly items-center'>
-              <div className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
+              className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
               <Link to='/phone' ><img src={phone} alt="" className='w-50 h-50 rounded-full cursor-pointer hover:opacity-60 bg-linear-30 duration-100'/></Link>
               <p className='text-center text-xl'>Phones</p>
-              </div>
-              <div className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
+              </motion.div>
+              <motion.div 
+               initial={{opacity:0 , y:50}}
+             animate={{opacity:1, y:0}}
+             transition={{delay:0.3}}
+              className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
               <Link to='/watch'><img src={watch} alt="" className='w-50 h-50 rounded-full cursor-pointer hover:opacity-60 bg-linear-30 duration-100' /></Link>
               <p className='text-center text-xl'>Watches</p>
-              </div>
-              <div className='shadow-lg p-7 rounded-3xl shadow-blue-600 '>
+              </motion.div>
+              <motion.div 
+               initial={{opacity:0 , y:50}}
+             animate={{opacity:1, y:0}}
+             transition={{delay:0.3}}
+              className='shadow-lg p-7 rounded-3xl shadow-blue-600 '>
               <Link to='/headphone'><img src={haedphone} alt="" className='w-50 h-50 rounded-full cursor-pointer hover:opacity-60 bg-linear-30 duration-100'/></Link>
               <p className='text-center text-xl'>HeadPhones</p>
-              </div>
+              </motion.div>
             </motion.section >
 
             <motion.section
-             initial={{opacity:0 , y:50}}
+             className='flex flex-col md:flex-row lg:flex-row justify-evenly items-center pt-25 gap-8'>
+              <motion.div 
+              initial={{opacity:0 , y:50}}
              animate={{opacity:1, y:0}}
              transition={{delay:0.3}}
-             className='flex flex-row justify-evenly items-center pt-25'>
-              <div className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
+              className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
               <Link to='/smartwatch'><img src={smartwatch} alt="" className='w-50 h-50 rounded-full cursor-pointer hover:opacity-60 bg-linear-30 duration-100'/></Link>
               <p className='text-center text-xl'>Smart Watch</p>
-              </div>
-              <div className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
+              </motion.div>
+              <motion.div 
+              initial={{opacity:0 , y:50}}
+             animate={{opacity:1, y:0}}
+             transition={{delay:0.3}}
+              className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
               <Link to='/accessories'><img src={accessories} alt="" className='w-50 h-50 rounded-full cursor-pointer hover:opacity-60 bg-linear-30 duration-100'/></Link>
               <p className='text-center text-xl'>Accessories</p>
-              </div>
-              <div className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
+              </motion.div>
+              <motion.div
+              initial={{opacity:0 , y:50}}
+             animate={{opacity:1, y:0}}
+             transition={{delay:0.3}} 
+              className='shadow-lg p-7 rounded-3xl shadow-blue-600'>
               <Link to='/speaker'><img src={speaker} alt="" className='w-50 h-50 rounded-full cursor-pointer hover:opacity-60 bg-linear-30 duration-100'/></Link>
               <p className='text-center text-xl'>Bluetooth Speaker</p>
-              </div>
+              </motion.div>
             </motion.section>
           </div> 
           {/* end category home */}
