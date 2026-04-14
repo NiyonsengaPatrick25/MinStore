@@ -20,12 +20,13 @@ const Products = () => {
 
       <div className='mt-20'>
           <h1 className='text-3xl font-bold text-blue-600 text-center pt-5'>Products</h1>
-    <div className='grid grid-cols-2 sm:grid-cols-4 justify-between items-center max-w-7xl mx-auto pl-4 mt-10'>
+    <div className=' grid grid-cols-2 sm:grid-cols-4 justify-between items-center max-w-7xl mx-auto pl-4 mt-10'>
           <motion.div>
             <motion.div
         initial={{opacity:0 , y:50}}
         animate={{opacity:1, y:0}}
         transition={{delay:0.3}}
+        className='pt-8'
             >
           <img src={accessory} alt="" className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
@@ -35,6 +36,7 @@ const Products = () => {
         initial={{opacity:0 , y:50}}
         animate={{opacity:1, y:0}}
         transition={{delay:0.3}}
+        className='pt-8'
           >
           <img src={watc} alt="" className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
@@ -45,6 +47,7 @@ const Products = () => {
         initial={{opacity:0 , y:50}}
         animate={{opacity:1, y:0}}
         transition={{delay:0.3}}
+        className='pt-8'
           >
           <img src={phon} alt=""  className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
@@ -56,6 +59,7 @@ const Products = () => {
         initial={{opacity:0 , y:50}}
         animate={{opacity:1, y:0}}
         transition={{delay:0.3}}
+        className='pt-8'
             >
           <img src={headphon} alt=""  className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
@@ -65,6 +69,7 @@ const Products = () => {
           initial={{opacity:0 , y:50}}
         animate={{opacity:1, y:0}}
         transition={{delay:0.3}} 
+        className='pt-8'
           >
           <img src={smartwatch} alt=""  className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
@@ -74,6 +79,7 @@ const Products = () => {
         initial={{opacity:0 , y:50}}
         animate={{opacity:1, y:0}}
         transition={{delay:0.3}}
+        className='pt-8'
           >
           <img src={speaker} alt=""  className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
@@ -85,6 +91,7 @@ const Products = () => {
         initial={{opacity:0 , y:50}}
         animate={{opacity:1, y:0}}
         transition={{delay:0.3}}
+        className='pt-8'
         >
           <img src={accessory} alt="" className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
@@ -94,6 +101,7 @@ const Products = () => {
            initial={{opacity:0 , y:50}}
         animate={{opacity:1, y:0}}
         transition={{delay:0.3}}
+        className='pt-8'
           >
           <img src={watc} alt="" className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
@@ -104,17 +112,19 @@ const Products = () => {
            initial={{opacity:0 , y:50}}
         animate={{opacity:1, y:0}}
         transition={{delay:0.3}}
+        className='pt-8'
           >
           <img src={phon} alt=""  className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
           cursor-pointer rounded-xl  '>More Details</button></Link>
           </motion.div>
           </motion.div>
-          <div className=''>
+          <div>
             <motion.div
              initial={{opacity:0 , y:50}}
         animate={{opacity:1, y:0}}
         transition={{delay:0.3}}
+        className='pt-8'
             >
           <img src={headphon} alt=""  className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
@@ -124,6 +134,7 @@ const Products = () => {
            initial={{opacity:0 , y:50}}
         animate={{opacity:1, y:0}}
         transition={{delay:0.3}}
+        className='pt-8'
           >
           <img src={smartwatch} alt=""  className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 
@@ -133,6 +144,7 @@ const Products = () => {
         initial={{opacity:0 , y:50}}
         animate={{opacity:1, y:0}}
         transition={{delay:0.3}}
+        className='pt-8'
           >
           <img src={speaker} alt=""  className='w-40 h-40 rounded-full cursor-pointer shadow-md shadow-blue-600 hover:scale-95 linear duration-75 transition-all'/>
           <Link to='https://wa.me/250791602044' target='_blank'><button className='mx-6 border px-2 py-1 outline-none mt-3  bg-blue-600 hover:bg-blue-500 text-white 

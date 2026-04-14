@@ -13,7 +13,7 @@ initial={{opacity:0 , scale:0.7}}
 animate={{opacity:1, scale:1}}
 transition={{duration:0.5}}
 className=" mt-20"> 
-<h1 className="text-3xl pl-20 font-bold text-blue-600"> 
+<h1 className="text-3xl text-center font-bold text-blue-600"> 
 {name} 
 </h1> 
 <div className="grid grid-cols-2 max-w-6xl mx-auto sm:grid-cols-3   p-5"> 

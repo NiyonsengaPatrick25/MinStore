@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className=' sticky top-0 z-60 backdrop-blur-2xl'>
       <nav >
-      <div className='hidden lg:flex flex flex-row justify-evenly pt-5 '>
+      <div className='hidden lg:flex  flex-row justify-evenly pt-5 '>
       <Link to='/' className=' hover:text-blue-600 duration-100 '>Home</Link>
       <Link to='/category' className=' hover:text-blue-600 duration-100'>Categories</Link>
       <Link to='/product' className=' hover:text-blue-600 duration-100'>Products</Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
 
      <div className='flex '>
       <div className={` lg:hidden ${page?'fixed':'hidden'} cursor-pointer`}>
-          <div className='flex flex-col ml-15 pt-1 bg-gray-100 px-4 py-1 text-gray-800'>
+          <div className='flex flex-col ml-15  bg-gray-100 px-6 py-4 text-gray-800 space-y-3'>
       <Link to='/' className=' hover:text-blue-600 duration-100 '>Home</Link>
       <Link to='/about' className=' hover:text-blue-600 duration-100'>About Us</Link>
       <Link to='/service' className=' hover:text-blue-600 duration-100'>Services</Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className={` lg:hidden ${feature?'fixed':'hidden'} cursorpointer`}>
-        <div className='flex flex-col ml-50 pt-1 bg-gray-100 px-4 py-1 rounded text-gray-800'>
+        <div className='flex flex-col ml-50  bg-gray-100 px-6 py-4 rounded text-gray-800 space-y-3'>
       <Link to='/category' className=' hover:text-blue-600 duration-100'>Categories</Link>
       <Link to='/product' className=' hover:text-blue-600 duration-100'>Products</Link>
           </div>
